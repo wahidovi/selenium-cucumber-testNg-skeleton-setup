@@ -20,7 +20,8 @@ public class FBLogin {
 	public void user_open_facebook_hompage() {
 	
 		//System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
-		 System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		
+		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
